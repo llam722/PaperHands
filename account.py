@@ -21,3 +21,7 @@ if account.trading_blocked:
 #Check how much money we can use to open new positions aka buying power
 print ('${} is available as buying power.'.format(account.buying_power))
 print ('${} is available as cash.'.format(account.cash))
+
+#Check current balance vs last market close
+balance_change = float(account.equity) - float(account.last_equity)
+print(f'Today\'s portfolio balance change: ${balance_change}')
