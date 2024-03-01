@@ -1,3 +1,4 @@
+import requests
 from alpaca.trading.client import TradingClient
 from alpaca.trading.requests import GetAssetsRequest
 
@@ -12,3 +13,4 @@ if account.trading_blocked:
 
 #Check how much money we can use to open new positions aka buying power
 print ('${} is available as buying power.'.format(account.buying_power))
+print ('${} is available as cash.'.format(account.cash))
