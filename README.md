@@ -1,0 +1,2 @@
+# PaperHands
+Algo trading
